@@ -7,6 +7,10 @@ import BlogPage from './pages/BlogPage';
 import UserPage from './pages/UserPage';
 import LoginPage from './pages/LoginPage';
 import Page404 from './pages/Page404';
+import HomePage from './pages/HomePage';
+import Product from './pages/Products';
+import Chatbot from './pages/Chatbot';
+import UChat from './pages/Uchat';
 import ProductsPage from './pages/ProductsPage';
 import DashboardAppPage from './pages/DashboardAppPage';
 
@@ -19,6 +23,7 @@ export default function Router() {
       element: <DashboardLayout />,
       children: [
         { element: <Navigate to="/dashboard/app" />, index: true },
+        { path: 'chatbot', element: <Chatbot /> },
         { path: 'app', element: <DashboardAppPage /> },
         { path: 'user', element: <UserPage /> },
         { path: 'products', element: <ProductsPage /> },
@@ -32,7 +37,7 @@ export default function Router() {
     {
       element: <SimpleLayout />,
       children: [
-        { element: <Navigate to="/dashboard/app" />, index: true },
+        { element: <Navigate to="/dashboard/app" />},
         { path: '404', element: <Page404 /> },
         { path: '*', element: <Navigate to="/404" /> },
       ],
@@ -40,6 +45,18 @@ export default function Router() {
     {
       path: '*',
       element: <Navigate to="/404" replace />,
+    },
+    {
+      path: '/',
+      element: <HomePage />,
+    },
+    {
+      path: '/product',
+      element: <Product />,
+    },
+    {
+      path: '/uchat',
+      element: <UChat />,
     },
   ]);
 

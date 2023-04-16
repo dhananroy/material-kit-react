@@ -24,7 +24,7 @@ const StyledSection = styled('div')(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
-  boxShadow: theme.customShadows.card,
+  // boxShadow: theme.customShadows.card,
   backgroundColor: theme.palette.background.default,
 }));
 
@@ -61,7 +61,7 @@ export default function LoginPage() {
         {mdUp && (
           <StyledSection>
             <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 5 }}>
-              Hi, Welcome Back
+              Hi, Welcome
             </Typography>
             <img src="/assets/illustrations/illustration_login.png" alt="login" />
           </StyledSection>
@@ -70,12 +70,12 @@ export default function LoginPage() {
         <Container maxWidth="sm">
           <StyledContent>
             <Typography variant="h4" gutterBottom>
-              Sign in to Minimal
+              Sign in
             </Typography>
 
             <Typography variant="body2" sx={{ mb: 5 }}>
               Don’t have an account? {''}
-              <Link variant="subtitle2">Get started</Link>
+              <Link variant="subtitle2">Create one</Link>
             </Typography>
 
             <Stack direction="row" spacing={2}>
@@ -88,7 +88,7 @@ export default function LoginPage() {
               </Button>
 
               <Button fullWidth size="large" color="inherit" variant="outlined">
-                <Iconify icon="eva:twitter-fill" color="#1C9CEA" width={22} height={22} />
+                <Iconify icon="eva:github-fill" color="#222222" width={22} height={22} />
               </Button>
             </Stack>
 

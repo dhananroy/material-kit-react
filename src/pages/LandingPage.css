@@ -1,0 +1,90 @@
+.banner {
+    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+  }
+  
+  .banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .banner p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .features {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .features h2 {
+    margin-bottom: 30px;
+  }
+  
+  .features ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+  }
+  
+  .features li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .signup {
+    background-color: #2ecc71;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .signup h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .signup p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .banner {
+      height: 300px;
+    }
+    .banner h1 {
+      font-size: 2rem;
+    }
+    .banner p {
+      font-size: 1.2rem;
+    }
+    .features {
+      padding: 30px 20px;
+    }
+    .features h2 {
+      font-size: 2rem;
+    }
+    .features li {
+      font-size: 1rem;
+    }
+    .signup {
+      padding: 30px 20px;
+    }
+    .signup h2 {
+      font-size: 1.8rem;
+    }
+    .signup p {
+      font-size: 1rem;
+    }
+  }
+  
